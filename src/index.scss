@@ -1,0 +1,48 @@
+// src/index.scss
+
+// 1. Define variables first
+$primary-color: #ff5a5f;
+$secondary-color: #2d2d2d;
+$font-family: 'Roboto', sans-serif;
+
+button {
+  background-color: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.logo {
+  width: 250px; /* Adjust the size as needed */
+  display: block;
+  margin: 0 auto; /* Centers the logo */
+}
+// 3. Use your variables
+body {
+  font-family: $font-family;
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+// 4. Media queries and additional styling
+@media (max-width: 768px) {
+  .product-card {
+    // Adjust styles for smaller screens
+    width: 100%;
+    padding: 8px;
+  }
+}
+
+.center-title {
+  text-align: center;
+}
+.nav-links a {
+  color: white;  // Set link color to white
+  text-decoration: none;  // Remove underline
+}
+
+.nav-links a:hover {
+  color: #ddd;  // Optional: Change link color on hover
+}

@@ -1,0 +1,35 @@
+// src/components/ProductCard.scss
+@import "../../styles/variables.scss";
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Space between cards */
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  width: 200px; /* Adjust as needed */
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    color: $secondary-color; // Ensure these variables are defined and imported
+  }
+
+  &__price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: $fourth-color; // Ensure these variables are defined and imported
+  }
+}
